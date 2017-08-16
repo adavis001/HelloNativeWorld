@@ -1,5 +1,6 @@
 import React from 'react';
 import { StyleSheet, Text, View, Image } from 'react-native';
+import Greetings from './Greetings';
 
 export default class App extends React.Component {
   render() {
@@ -8,9 +9,10 @@ export default class App extends React.Component {
     };
     return (
       <View style={styles.container}>
-        <Text>Hello Taylor!</Text>
-        <Text>Behold!  I made a phone app!</Text>
-        <Text>I hope you are having a beautiful day!</Text>
+        <Greetings name='Alex' />
+        <Greetings name='Michael' />
+        <Greetings name='Jon' />
+        <Greetings name='Vance' />
         <Image source={pic} style={{width: 193, height: 110}} />
       </View>
     );

@@ -1,7 +1,8 @@
 import React from 'react';
-import { StyleSheet, Text, View, Image } from 'react-native';
+import { StyleSheet, Text, TextInput, View, Image } from 'react-native';
 import Greetings from './Greetings';
 import Blink from './Blink';
+import PizzaTranslator from './PizzaTranslator';
 
 export default class App extends React.Component {
   render() {
@@ -9,16 +10,13 @@ export default class App extends React.Component {
         uri: 'https://upload.wikimedia.org/wikipedia/commons/f/fb/Aubergine.jpg'
     };
     return (
-      <View style={styles.container}>
-        <Blink text={<Greetings name='Alex'/>} />
-        <Blink text={<Greetings name='Michael'/>} />
-        <Blink text={<Greetings name='Jon'/>} />
-        <Blink text={<Greetings name='Vance'/>} />
-        <Greetings name='Alex'/>
-        <Greetings name='Michael' />
-        <Greetings name='Jon' />
-        <Greetings name='Vance' />
-        <Image source={pic} style={{width: 193, height: 110}} />
+      <View style={{flex: 1}}>
+        <View style={{flex: 2, backgroundColor: 'powderblue'}} />
+        <Greetings name='Megan!'/>
+        <Text>I can translate text into PIZZA!</Text>
+        <PizzaTranslator />
+        <View style={{flex: 3, backgroundColor: 'skyblue'}} />
+        <View style={{flex: 1, backgroundColor: 'steelblue'}} />
       </View>
     );
   }

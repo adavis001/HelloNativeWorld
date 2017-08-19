@@ -3,6 +3,7 @@ import { StyleSheet, Text, TextInput, View, Image } from 'react-native';
 import Greetings from './Greetings';
 import Blink from './Blink';
 import PizzaTranslator from './PizzaTranslator';
+import ButtonBasics from './ButtonBasics';
 
 export default class App extends React.Component {
   render() {
@@ -15,8 +16,7 @@ export default class App extends React.Component {
         <Greetings name='Megan!'/>
         <Text>I can translate text into PIZZA!</Text>
         <PizzaTranslator />
-        <View style={{flex: 3, backgroundColor: 'skyblue'}} />
-        <View style={{flex: 1, backgroundColor: 'steelblue'}} />
+        <ButtonBasics />
       </View>
     );
   }

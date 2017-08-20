@@ -4,7 +4,7 @@ import { Text, View } from 'react-native';
 export default class Greetings extends Component {
   render() {
     return (
-      <Text>Hello {this.props.name}</Text>
+      <Text style={{paddingTop: 50}}>Hello {this.props.name}</Text>
     );
   }
 }

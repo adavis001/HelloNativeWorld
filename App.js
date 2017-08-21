@@ -4,8 +4,10 @@ import Greetings from './Greetings';
 import Blink from './Blink';
 import PizzaTranslator from './PizzaTranslator';
 import ButtonBasics from './ButtonBasics';
-import Touchables from './Touchables';
 import SectionListBasics from './SectionList';
+import Touchables from './Touchables';
+import FetchMovies from './FetchMovies';
+
 
 
 export default class App extends React.Component {
@@ -27,6 +29,7 @@ export default class App extends React.Component {
         <PizzaTranslator />
         <SectionListBasics />
       <ScrollView>
+        <FetchMovies />
         <Touchables />
         <Touchables />
         <Touchables />
